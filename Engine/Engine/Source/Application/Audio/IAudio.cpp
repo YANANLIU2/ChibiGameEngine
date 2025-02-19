@@ -1,3 +1,5 @@
+﻿// © 2025 Yanan Liu <yanan.liu0325@gmail.com>
+
 #include "IAudio.h"
 #include "OpenALAudio.h"
 

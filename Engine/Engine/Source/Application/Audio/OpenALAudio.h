@@ -65,8 +65,14 @@ namespace Engine
         virtual bool IsMusicFading() override;
 
     private:
-        // Helper functions
+        // Helper functions for audio loading
+        bool LoadAudioFile(const char* filepath, ALuint& buffer);
+        ALuint LoadAudioBuffer(const char* filepath, uint32_t audioKey);
         bool LoadWAVFile(const char* filepath, ALuint& buffer);
+        bool LoadMP3File(const char* filepath, ALuint& buffer);
+        bool LoadFLACFile(const char* filepath, ALuint& buffer);
+
+        // Helper functions
         void CleanupBuffer(const std::string& filepath);
         ALuint CreateSource();
         void UpdateFading();
