@@ -621,7 +621,7 @@ namespace Engine
         {
             // Log a warning instead of failing completely
 			printf("Warning: WAV file '%s' may be truncated. Expected %d frames but read %d.\n",
-				filepath, wav.totalPCMFrameCount, framesRead);
+				filepath, wav.totalPCMFrameCount, static_cast<int>(framesRead));
         }
 
         // Determine format (mono or stereo)
@@ -685,7 +685,7 @@ namespace Engine
         {
             // Log a warning instead of failing completely
 			printf("Warning: MP3 file '%s' may be truncated. Expected %d frames but read %d.\n",
-				filepath, totalPCMFrameCount, framesRead);
+				filepath, totalPCMFrameCount, static_cast<int>(framesRead));
         }
 
         // Determine the OpenAL format based on channel count

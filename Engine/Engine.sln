@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcxproj", "{6F85066A-8221-4E32-9EFC-58EF4EDA78D1}"
 EndProject
 Global
@@ -18,5 +21,11 @@ Global
 		{6F85066A-8221-4E32-9EFC-58EF4EDA78D1}.Release|Win32.Build.0 = Release|Win32
 		{6F85066A-8221-4E32-9EFC-58EF4EDA78D1}.Release|x64.ActiveCfg = Release|x64
 		{6F85066A-8221-4E32-9EFC-58EF4EDA78D1}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {812EAECE-FC2F-4A58-B338-2DE97C90B3A1}
 	EndGlobalSection
 EndGlobal
